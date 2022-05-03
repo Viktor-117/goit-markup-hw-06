@@ -520,6 +520,10 @@ background-position: center;
   display: flex;
 }
 
+.join {
+  margin-left: auto;
+}
+
 .join-email {
   width: 358px;
   height: 50px;
@@ -785,8 +789,8 @@ background-position: center;
 .input-icon {
   position: absolute;
   top: 50%;
-  left: 21px;
-  transform: translate(-50%, -50%);
+  left: 12px;
+  transform: translateY(-50%);
 }
 
 .modal-input {
@@ -841,14 +845,14 @@ background-position: center;
 
 .modal-checkbox-text {
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.7;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
+  margin-left: 12px;
 }
 
 .modal-checkbox-text::before {
