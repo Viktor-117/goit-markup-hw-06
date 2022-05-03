@@ -871,7 +871,7 @@ background-position: center;
   border: none;
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 11px 8px;
   background-position: center;
   }
 
