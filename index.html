@@ -207,44 +207,45 @@
                 </ul>
             </div>
         </section>
+        <!-- Section-5 Clients -->
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients-title">Постоянные клиенты</h2>
+                <ul class="clients-list list">
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-1"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-3"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-4"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-5"></use>
+                            </svg>
+                        </a></li>
+                    <li class="clients-item"><a href="" class="clients-link link">
+                            <svg class="clients-icon" width="106" height="60">
+                                <use href="./images/icon.svg#icon-client-6"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <section class="clients">
-        <div class="container">
-            <h2 class="clients-title">Постоянные клиенты</h2>
-            <ul class="clients-list list">
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-1"></use>
-                    </svg>
-                </a></li>
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-2"></use>
-                    </svg>    
-                </a></li>
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-3"></use>
-                    </svg>    
-                </a></li>
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-4"></use>
-                    </svg>    
-                </a></li>
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-5"></use>
-                    </svg>    
-                </a></li>
-                <li class="clients-item"><a href="" class="clients-link link">
-                    <svg class="clients-icon" width="106" height="60">
-                        <use href="./images/icon.svg#icon-client-6"></use>
-                    </svg>    
-                </a></li>
-            </ul>
-        </div>
-    </section>
     <footer class="footer">
         <div class="container">
             <div class="address">
@@ -282,10 +283,60 @@
                         </a></li>
                 </ul>
             </div>
+            <form action="#" class="join">
+                <h3 class="join-title">Подпишитесь на рассылку</h3>
+                <div class="send-thumb">
+                    <input type="email" class="join-email" name="E-mail" placeholder="E-mail">
+                    <button type="button" class="join-email-btn">Подписаться
+                        <svg class="send-icon" width="24" height="24">
+                            <use href="./images/icon.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="#" class="modal-form">
+                <div class="form-field">
+                    <label for="name" class="modal-label">Имя</label>
+                    <div class="input-wrap">
+                        <input type="text" class="modal-input name" name="name" id="name">
+                        <svg class="input-icon" width="12" height="12">
+                            <use href="./images/icon.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="tel" class="modal-label">Телефон</label>
+                    <div class="input-wrap">
+                        <input type="tel" class="modal-input tel" name="tel" id="tel">
+                        <svg class="input-icon" width="13" height="13">
+                            <use href="./images/icon.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="mail" class="modal-label">Почта</label>
+                    <div class="input-wrap">
+                        <input type="email" class="modal-input mail" name="mail" id="mail">
+                        <svg class="input-icon" width="15" height="12">
+                            <use href="./images/icon.svg#icon-email"></use>
+                        </svg>
+                    </div>                    
+                </div>
+                <div class="form-field">
+                    <label for="feedback" class="modal-label">Комментарий</label>
+                    <textarea name="feedback" id="feedback" class="modal-textarea" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-field">
+                    <input type="checkbox" class="modal-checkbox visually-hidden" name="privacy-check" id="checkbox">
+                    <label for="checkbox" class="modal-checkbox-text">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="modal-link"> Условия договора</a></label>
+                </div>
+            </form>
+            <button type="submit" class="modal-submit">Отправить</button>
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-icon" width="11px" height="11px">
                     <use href="./images/icon.svg#icon-close"></use>
